@@ -206,18 +206,18 @@ Restore.ai is the incremental revenue attribution tool. Flow tab used across all
 
 These are shared benchmark and reference sheets used across all clients. Sheet names as they appear in Google Drive:
 
-| Sheet Name |
-|------------|
-| [Marketech] Master Client Performance Sheet |
-| [Data Framework] Klaviyo Revenue Benchmarks v3 |
-| [Data Framework] Shopify Email Revenue Benchmark |
-| [Data Framework] LTA Email Benchmarks |
-| [Data Framework] GA4 Rev Benchmark |
-| [Data Framework] R.ai vs. Native Klaviyo Events |
-| [Data Framework] Restore.ai Master Sheet |
-| [Data Framework] Counterfactual Incremental Revenue Benchmark |
-| [Data Framework] Shopify Consideration Length |
-| [Data Framework] Retention Benchmark Analysis |
+| Sheet Name | URL |
+|------------|-----|
+| [Marketech] Master Client Performance Sheet | https://docs.google.com/spreadsheets/d/1E_hHK_ie4agpmjOyCU5U1MBn4JJarW4_gm-X0KMrXEk/edit |
+| [Data Framework] Klaviyo Revenue Benchmarks v3 | https://docs.google.com/spreadsheets/d/1i87VGlcPqlTQIYLeKZC-TMQfCqz9_FnjANiADj7dBc8/edit |
+| [Data Framework] Shopify Email Revenue Benchmark | https://docs.google.com/spreadsheets/d/1SHWPilEXuss8aKF10FDHK7AjvrckBtzqEhLFXYyXOA4/edit |
+| [Data Framework] LTA Email Benchmarks | https://docs.google.com/spreadsheets/d/1NS9fKSTJwQ30dXUL0FfqA6d5Ow6CkZYNY_jjJHgMEKU/edit |
+| [Data Framework] GA4 Rev Benchmark | https://docs.google.com/spreadsheets/d/19DJV0szS-IJv-iFAUQG8mlL8wPAQDn3ufdxSazXKa1c/edit |
+| [Data Framework] R.ai vs. Native Klaviyo Events | https://docs.google.com/spreadsheets/d/1AgLDQSYozNK7UR3MbNJhvuJ944pBbqUQ6NZptZfwhx0/edit |
+| [Data Framework] Restore.ai Master Sheet | https://docs.google.com/spreadsheets/d/1yoi11-csHXdR-KB9jIh3jsPhTlfvOVQEh65asdSWcsM/edit |
+| [Data Framework] Counterfactual Incremental Revenue Benchmark | https://docs.google.com/spreadsheets/d/1X1vWZGtl_aUgaofB1ft1DeNO8jL705nEUjE3hJ_HO90/edit |
+| [Data Framework] Shopify Consideration Length | https://docs.google.com/spreadsheets/d/1WuSdXtR70OjoPbC18TaM0aY0lQ4ULYxABqoykDwUqSE/edit |
+| [Data Framework] Retention Benchmark Analysis | https://docs.google.com/spreadsheets/d/1zksHhokYZPdIAFc1rlVj92fMXE3QBc2P4ytwcFEbQIk/edit |
 
 ---
 
@@ -236,6 +236,73 @@ Raw Klaviyo flow names vary by client. These are the standard cleaned names and 
 | Loyalty/Retention | Loyalty/Retention |
 
 Note: All raw Klaviyo flow name variations (e.g., "Abandoned Cart Flow", "Checkout Abandonment - Email", "Post Fulfillment") map to these cleaned names. Google Sheets is the source of truth for flow name mapping — not regex formulas.
+
+---
+
+---
+
+## Section 7: Platform & Attribution Settings Per Client
+
+Source: `[Marketech] Master Client List and URLs.xlsx` — "List of Active ERTs" tab.
+
+- **Email Attribution – Opens / Clicks**: How long after an email open or click Klaviyo attributes a purchase to that email.
+- **SMS Attribution – Delivered / Clicks**: Same concept but for SMS messages.
+- **Email Is Default?**: Whether email attribution is the primary/default attribution model for that client.
+- **One Platform?**: Yes = email and SMS are on the same platform. No = different platforms.
+- `—` = no data set / not applicable. `no access` = Marketech does not have account access.
+
+| Client | Email Platform | SMS Platform | Email Attr – Opens | Email Attr – Clicks | SMS Attr – Delivered | SMS Attr – Clicks | Email Is Default? | One Platform? |
+|--------|---------------|-------------|-------------------|---------------------|---------------------|------------------|------------------|--------------|
+| AirSkirts | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Andie Swim | Klaviyo | Klaviyo + Attentive | 2 days | 2 days | 1 day | 1 day | Yes | No |
+| Boat Outfitters | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Bruce Bolt | Insider | Insider | 5 days | 5 days | — | 1 day | Yes | Yes |
+| By Babes | Klaviyo | Klaviyo | 10 days | 10 days | — | 5 days | Yes | Yes |
+| Canopy | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| Canvasback | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| CarCovers | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Compartes | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| CordaRoy's | Klaviyo | Klaviyo | — | 3 days | 12 hours | 3 days | Yes | Yes |
+| Dedcool | Klaviyo | Attentive | 5 days | 5 days | 1 day | 7 days | Yes | No |
+| Dollar Shave Club | Klaviyo | Klaviyo | 5 days | 5 days | — | 2 days | Yes | Yes |
+| Dr.Dabber | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| Evirelle (INTL) | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| Evirelle (SWEDEN) | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| EZ Snap | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Felix Gray | Klaviyo | Klaviyo | 3 days | 3 days | 3 days | 3 days | Yes | Yes |
+| Flykitt | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Gainful | — | — | — | — | — | — | — | — |
+| Goodr | no access | no access | no access | no access | no access | no access | no access | no access |
+| Goodr CA | no access | no access | no access | no access | no access | no access | no access | no access |
+| Grant Station | Customer.io | Customer.io | — | — | — | — | — | Yes |
+| Happy V | Klaviyo | Attentive | 3 days | 3 days | — | 1 day | Yes | No |
+| Heretic Parfum | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| HOPWTR | Klaviyo | Attentive | 1 day | 2 days | — | 1 day | Yes | No |
+| Hours Collection | Klaviyo | Klaviyo | 7 days | 7 days | — | 1 day | Yes | Yes |
+| Irish Supply | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| Ivy City Co | Klaviyo | Klaviyo | 5 days | 5 days | 1 day | 1 day | Yes | Yes |
+| Jennah Organics (Dutch) | — | — | — | — | — | — | — | — |
+| Jennah Organics (English) | — | — | — | — | — | — | — | — |
+| Melton Tackle | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| MiLa | Klaviyo | Attentive | — | 7 days | 1 day | 7 days | Yes | No |
+| NAB Leather | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Nomadic | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Nutrabio Labs | Klaviyo | Klaviyo | 3 days | 3 days | 12 hours | 5 days | Yes | Yes |
+| Par Olive | Klaviyo | Klaviyo | — | 1 day | — | 1 day | Yes | Yes |
+| Payne Glasses | Klaviyo | Klaviyo | — | 5 days | — | 1 day | Yes | Yes |
+| Peace Collective | Klaviyo | Postscript | 5 days | 5 days | 12 hours | 5 days | Yes | No |
+| Planet Rhinestone | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| RejuvaCare | Klaviyo | Klaviyo | 10 days | 10 days | — | 1 day | Yes | Yes |
+| Renewa Skin | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| Revival Rugs | Klaviyo | Klaviyo | 3 days | 3 days | 12 hours | 3 days | Yes | Yes |
+| Ryer | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| SILCA | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| Stio | — | — | — | — | — | — | — | — |
+| UnHide | Klaviyo | Klaviyo + Postscript | 5 days | 5 days | — | 1 day | Yes | No |
+| Uni | Klaviyo | Klaviyo | 5 days | 5 days | 12 hours | 5 days | Yes | Yes |
+| Waterman's | Klaviyo | Klaviyo | 5 days | 5 days | — | 1 day | Yes | Yes |
+| WeNatal | Klaviyo | Klaviyo | 1 day | 3 days | — | 1 day | Yes | Yes |
+| Wondercide | Attentive | Attentive | 5 days | 5 days | 1 day | 3 days | Yes | Yes |
 
 ---
 
